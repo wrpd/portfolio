@@ -1,6 +1,5 @@
 <?php
 
-// set routes
     router::set_route('/', function(){
 
         index_controller::create_view('index');

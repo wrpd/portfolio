@@ -1,7 +1,5 @@
 <?php
 
-// autoload classes
-
     function autoload($class_name){
         
         if (file_exists('./app/core/classes/'. $class_name . '.php')){
@@ -19,9 +17,6 @@
         }
     }
 
-    spl_autoload_register(autoload);
+    spl_autoload_register('autoload');
 
-// load routes
-
-    require_once './app/core/routes/routes.php';
 ?>
